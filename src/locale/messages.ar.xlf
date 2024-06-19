@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-IN" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="192276537343938217" datatype="html">
+        <source>Please Enter Your firstName</source>
+        <target>يرجى ادخال الاسم الاول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2856124033414146588" datatype="html">
+        <source>Please Enter Your lastName</source>
+        <target>الرجاء إدخال اسمك الأخير</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3265800430992736625" datatype="html">
+        <source>Please Enter Your email</source>
+        <target>رجاءا أدخل بريدك الإلكتروني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1780844575557433629" datatype="html">
+        <source> Submit Form Data </source>
+        <target>إرسال بيانات النموذج</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2244395095773729214" datatype="html">
+        <source>user registration form</source>
+        <target></target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

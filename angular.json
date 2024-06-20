@@ -7,10 +7,16 @@
       "i18n": {
         "sourceLocale": "en-IN",
         "locales": {
-          "ar-AE": {
-            "translation": "/src/locale/messages.ar.xlf",
-            "baseHref": "ar-AE."
-          }
+          // "ar": {
+          //   "translation": "src/assets/locale/messages.ar.xlf",
+          //   "baseHref": "ar"
+          // },
+          // "hi": {
+          //   "translation": "src/assets/locale/messages.hi.xlf",
+          //   "baseHref": "hi"
+          // }
+          // "ar": "src/assets/locale/messages.ar.xlf",
+          "hi": "src/assets/locale/messages.hi.xlf"
         }
       },
 
@@ -23,7 +29,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": ["ar-AE"],
+            // "localize": ["ar", "hi"],
+            "localize": ["hi"],
             "outputPath": "dist/internationalisation",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -63,6 +70,9 @@
             "production": {
               "buildTarget": "internationalisation:build:production"
             },
+            // "ar": {
+            //   "buildTarget": "internationalisation:build:ar"
+            // },
             "development": {
               "buildTarget": "internationalisation:build:development"
             }

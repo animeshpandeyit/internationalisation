@@ -15,8 +15,8 @@
           //   "translation": "src/assets/locale/messages.hi.xlf",
           //   "baseHref": "hi"
           // }
-          // "ar": "src/assets/locale/messages.ar.xlf",
-          "hi": "src/assets/locale/messages.hi.xlf"
+          "hi": "src/assets/locale/messages.hi.xlf",
+          "ar": "src/assets/locale/messages.ar.xlf"
         }
       },
 
@@ -29,8 +29,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            // "localize": ["ar", "hi"],
-            "localize": ["hi"],
+            "localize": ["hi", "ar"],
             "outputPath": "dist/internationalisation",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -60,6 +59,16 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "hi": {
+              "localize": ["hi"],
+              "outputPath": "src/assets/locale/messages.hi.xlf",
+              "baseHref": "/hi/"
+            },
+            "ar": {
+              "localize": ["ar"],
+              "outputPath": "src/assets/locale/messages.ar.xlf",
+              "baseHref": "/ar/"
             }
           },
           "defaultConfiguration": "production"
@@ -70,11 +79,14 @@
             "production": {
               "buildTarget": "internationalisation:build:production"
             },
-            // "ar": {
-            //   "buildTarget": "internationalisation:build:ar"
-            // },
             "development": {
               "buildTarget": "internationalisation:build:development"
+            },
+            "hi": {
+              "buildTarget": "internationalisation:build:hi"
+            },
+            "ar": {
+              "buildTarget": "internationalisation:build:ar"
             }
           },
           "defaultConfiguration": "development"

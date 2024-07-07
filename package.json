@@ -3,10 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "clean": "ng clean",
     "start": "ng serve",
+    "start:hi": "ng serve --configuration=hi",
+    "start:ar": "ng serve --configuration=ar",
+    "build-locale:hi": "ng build --configuration=hi --output-path=dist/hi",
+    "build-locale:ar": "ng build --configuration=ar --output-path=dist/ar",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-locale": "npm run build-locale:hi && npm run build-locale:ar"
   },
   "private": true,
   "dependencies": {
